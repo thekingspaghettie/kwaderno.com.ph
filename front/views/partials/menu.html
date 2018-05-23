@@ -1,0 +1,34 @@
+<ul class="nav nav-sidebar">
+    <li data-ui-sref-active="active">
+        <a class="cursor-pointer" data-ui-sref="poem.news" title="News">
+            <i class="zmdi zmdi-view-dashboard zmdi-hc-fw sidebar-icon"></i>
+            <div class="sidebar-txt"><b>News</b></div>
+        </a>
+    </li>
+    <li class="sub-menu">
+        <a class="cursor-pointer" href="" toggle-submenu><i class="zmdi zmdi-chart-donut zmdi-hc-fw sidebar-icon"></i><b>My Kwaderno</b></a>
+        <ul class="m-l-25">
+            <li data-ng-class="{'active toggled': active_state.includes('poem.wall')}" >
+                <a href="" data-ui-sref="poem.wall">
+                    Page
+                </a>
+            </li>
+            <li data-ng-class="{'active toggled': active_state.includes('bidding.merchant-list')}" >
+                <a href="" data-ui-sref="bidding.merchant-list"
+                    data-ng-class="">
+                    Notes
+                </a>
+            </li>
+            <li data-ng-class="{'active toggled': active_state.includes('poem.profile')}" >
+                <a href="" data-ui-sref="poem.profile" data-ng-class="">
+                    Profile
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<!-- <div class="collapse-nav navigator-expander">
+    <div wavesEffect class="toggle-nav-collapse expander" href="javascript:void(0);" ng-click="doClick($event)">
+        <i class="zmdi zmdi-chevron-left zmdi-hc-fw rotate-left" ng-class="{'rotate-left': toggled, 'rotate-right': !toggled}"></i>
+    </div>
+</div> -->

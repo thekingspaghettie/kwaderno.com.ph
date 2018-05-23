@@ -1,0 +1,11 @@
+<div data-ng-include="'views/partials/header.html'"></div>
+<div>
+    <div class="page-with-sidebar" ng-class="{'page-sidebar-expanded': toggled, 'page-sidebar-collapsed': !toggled}">
+        
+        <aside  data-ng-include="'views/partials/menu.html'" scrollbar class="sidebar-wrapper" style="position: fixed !important;padding-top: 20px;" ></aside>
+        
+        <section id="content" class="page-view" data-ui-view style="padding-bottom: 80px;"></section>
+    </div>
+
+</div>
+<div id="footer" data-ng-include src="'views/partials/footer.html'"></div>

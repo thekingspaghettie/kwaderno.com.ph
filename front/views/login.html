@@ -1,0 +1,76 @@
+<div data-ng-controller="LoginCtrl">
+    <div class="container main-section">
+        <div class="row">
+            <div class="col-md-12 text-center user-login-header">
+                <h1>Kwaderno.ph</h1>
+                <p>Life is like a <span> BOOK</span></p>
+            </div>
+        </div>
+        <div class="row" data-ng-if="toggle.login === 1">
+            <div class="custom-design col-sm-12 login-image-main text-center" style="position: initial !important;">
+                <div class="row" style="display: grid;justify-content: center;align-items: center;">
+                    <div class="col-md-12 col-sm-12 col-xs-12 user-image-section">
+                        <img src="static/img/login/businessman.png">
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 user-login-box">
+                        <div class="form-group">
+                              <input type="text" class="form-control" placeholder="User Name" id="usr">
+                        </div>
+                        <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Password" id="usr">
+                        </div>
+                        <button class="btn" data-ng-click="onLogin()">Login</button>
+                    </div>
+                    <div class="col-sm-12">
+                        <p style="color: #928E90">Not registered?<a href="" data-ng-click="toggle.register = 1; toggle.login = 0"> Create an account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-ng-if="toggle.register === 1">
+            <div class="custom-design col-md-4 col-xs-12 login-image-main text-center register-media-height">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 user-image-section">
+                        <img src="static/img/login/businessman.png">
+                    </div>
+                    <div class="user-login-box">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last name" id="register_last_name">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First name" id="register_first_name">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email address" id="register_email_address">
+                            </div>    
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" id="register_password">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" id="register_confirm_password">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <button id="btn-submit-information" class="btn" data-ng-click="">Submit</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <p style="color: #928E90">Already have an account?<a href="" class="pull-right" data-ng-click="toggle.register = 0; toggle.login = 1"> Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

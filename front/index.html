@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="kwaderno" ng-controller="MainCtrl as mctrl" data-useragent="" class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>KWADERNO.ph</title>
+        <base href="/">
+        <link rel="icon" type="image/png" href="static/img/face.ico" />
+
+        <link rel="stylesheet" href="static/vendors/bower_components/animate.css/animate.min.css" defer="defer" />
+        <link rel="stylesheet" href="static/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" defer="defer" />
+        <!-- <link rel="stylesheet" href="static/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.css" defer="defer" /> -->
+        <link rel="stylesheet" href="static/vendors/bower_components/angular-loading-bar/build/loading-bar.min.css" defer="defer" />
+        <link rel="stylesheet" href="static/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="static/vendors/bower_components/chosen/chosen.min.css" rel="stylesheet" defer="defer"> -->
+        <!-- <link rel="stylesheet" href="static/css/bootstrap-select.min.css" rel="stylesheet" defer="defer"> -->
+        <link rel="stylesheet" href="static/css/app.min.css" id="app-level" />
+        <link rel="stylesheet" href="static/css/style.css" />
+        <!-- <link rel="stylesheet" href="static/css/sidebar.min.css" /> -->
+        <!-- <link rel="stylesheet" href="static/css/material-dashboard.min.css" /> -->
+        <link rel="stylesheet" href="static/vendors/fileinput/fileinput.less" rel="stylesheet" defer="defer">
+        <link rel="stylesheet" href="static/css/custom.css" />
+        <link rel="stylesheet" href="static/css/media-query.css" />
+
+    </head>
+
+    <body ng-class="{'login-content' : active_state.$current.self.name == 'true'}">
+        <data ui-view></data>
+    
+        <!-- JQuery -->
+        <script type="text/javascript" src="static/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+        <!-- Angular -->
+        <script type="text/javascript" src="static/vendors/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-resource/angular-resource.min.js"></script>
+
+        <!-- Angular Modules -->
+        <script type="text/javascript" src="static/vendors/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-loading-bar/build/loading-bar.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/oclazyload/dist/ocLazyLoad.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-webstorage-master/angular-webstorage.min.js" defer="defer"></script>
+
+        <!-- Add-ons Modules-->
+        <script type="text/javascript" src="static/vendors/bower_components/jquery.nicescroll/jquery.nicescroll.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/Waves/dist/waves.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bootstrap-growl/bootstrap-growl.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-nouislider/src/nouislider.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/ng-table/dist/ng-table.min.js" defer="defer"></script>
+        <!-- <script type="text/javascript" src="static/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js" defer="defer"></script> -->
+        <script type="text/javascript" src="static/vendors/bower_components/autosize/dist/autosize.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/moment/min/moment.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/df-tab-menu-master/build/df-tab-menu.min.js"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/flot/jquery.flot.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/flot/jquery.flot.pie.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-bootstrap-scrolling-tabs-master/dist/scrolling-tabs.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/input-mask/input-mask.min.js"></script>
+        <script type="text/javascript" src="static/vendors/input-mask/jquery-input-mask.js"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/chosen/chosen.jquery.mod.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/angular-chosen-localytics/chosen.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/sparklines/jquery.sparkline.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/flot.curvedlines/curvedLines.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/bower_components/flot-orderBars/js/jquery.flot.orderBars.min.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/fileinput/fileinput.js" defer="defer"></script>
+        <script type="text/javascript" src="static/vendors/fileinput/fileinput.min.js" defer="defer"></script>
+
+        <!-- Application -->
+        <script type="text/javascript" src="static/js/src/app.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/config.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/controllers/main.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/services.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/templates.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/modules/ui.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/directive.js" defer="defer"></script>
+        <script type="text/javascript" src="static/js/src/filter.js" defer="defer"></script>
+        <script type="text/javascript" src="static/data/constant.js" defer="defer"></script>
+
+        <!-- controllers -->
+       
+    </body>
+
+</html>

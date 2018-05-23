@@ -1,0 +1,74 @@
+#l-login, #l-register {
+    display: block;
+    margin: 0 auto;
+}
+
+#header-sbox {
+    top: 8px;
+    position: absolute;
+    height: 26px !important;
+    padding: 7px;
+    margin-left: 50px;
+}
+
+/**
+    Login
+*/
+.main-section{
+    background:url(/static/img/login/book.jpg) no-repeat center center fixed;
+    background-size: cover;
+    bottom:0px;
+    top:0px;
+    margin: 0px;
+    position:fixed;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    /* -o-background-size: cover; */
+    /* background-size: cover;*/
+}
+.user-login-header h1{
+    font-size: 45px;
+    color:#fff;
+}
+.user-login-header p,
+.last-part p{
+    color:#c9c5c7;
+}
+.user-login-header span{
+    color:#fff;
+    font-weight: 600;
+}
+.login-image-main{
+    padding: 30px;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0 0 5px 0 #fff;
+}
+.user-image-section img{
+    background-color: #B56162;
+    padding:30px;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}
+.user-login-box,.last-part{
+    padding:15px;
+}
+.user-login-box button {
+    background-color: #B56162;
+    border:1px solid #B56162;
+    width: 100%;
+    color:#fff;
+    font-weight:600;
+}
+.last-part button{
+    text-decoration: none;
+    color:#B56162;
+}
+
+.custom-design {
+    float: right;
+    width: 335px;
+    right: 27px;
+}
